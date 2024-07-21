@@ -1,7 +1,3 @@
-<details>
-<summary>code rulebook</summary>
-
-
 ### I: Implicit contracts: Guarantee/Assume type hints
 
 - For Functions
@@ -58,7 +54,5 @@ from [source_dir2] import *
 - **short files**: Max ~200 loc, Ideally < 120 loc
 - **short functions**: Max ~30 loc, ideally <= 15 loc; Ideally <= 2 args, max ~ 5 args
 - **commit messges**: ~ 5 words
-
-</details>
 
 
