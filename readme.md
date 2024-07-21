@@ -61,22 +61,4 @@ from [source_dir2] import *
 
 </details>
 
-<details>
-<summary>style guide</summary> 
-
-### Architecture
-- Decide conciously what constitutes the **interface(API)** and the **implementation** of your modules and seperate them well i.e. seperate the "What?" from the "How?"
-	- **Loose coupling**: Under the constraint of supplying the intended functionality, the module API should be as minimal as possible
-	- **Minimal exposure**": Don't expose what you don't need for the functionality; Attributes and methods not part of the interface should be hidden i.e. of the form `_attribute`
-- Sometimes variables like Settings are needed throughout the entire project. This is only allowed in the form of immutable Singletons:
-	- The variables must be bundled into a Singletons object ([singleton pattern](https://refactoring.guru/design-patterns/singleton/python/example))
-	- The singleton is initialized once by passed arguments or some default behaviour and then never changed
-- **Hierarchy of abstractions**: Organize the program into a hierachy of levels of abstraction, follwing a **stepdown rule**: Each function is ideally composed only of statements from the next lower level of ab>
-Mixing levels of abstraction should be avoided whenever possible
-
-
-### Checkpointing
-- Tests
-
-</details>
 
