@@ -4,8 +4,7 @@ version = "0.1.0"
 authors = [{name = "Daniel Hollarek", email = "daniel.hollarek@googlemail.com"}]
 description = "A very good project indeed"
 readme = "readme.md"
-dynamic = ["dependencies"]
-#urls = { "repository" = "https://github.com/Somerandomguy10111/..." }
-
-[tool.setuptools.dynamic]
-dependencies = {file = ["requirements.txt"]}
+#dependencies = ["holytools"]
+dependencies = ["holytools @ git+https://github.com/Somerandomguy10111/holytools"]
+#dependencies = ["holytools @ git+ssh://git@github.com/Somerandomguy10111/holytools", pkg2, pkg3]
+#urls = { "repository" = "https://github.com/Somerandomguy10111/" }
