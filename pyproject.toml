@@ -9,4 +9,4 @@ dependencies = ["holytools"]
 #dependencies = ["holytools @ git+ssh://git@github.com/Somerandomguy10111/holytools", pkg2, pkg3]
 
 [tool.setuptools.packages.find]
-where = ["myproject"]
+include = ["myproject"]   # Only discover in myproject folder
