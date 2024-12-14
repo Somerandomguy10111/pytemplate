@@ -1,13 +1,14 @@
-### I: Implicit contracts: Guaranteeing and assuming type hint conformity
+### I: Design by contract: Guaranteeing and assuming type hint conformity
 
 Functions
 - **Arguments**: All function arguments must be type hinted.
-     - **Passing the correct type** in arguments is **caller responsibility**:
-     - **Guarantee in call** and **assume in definition**: Passsed argument conform to type hint
-- **Returns**: Functions must either return the type they hint at or raise an Error (Returning and raising are mutually exclusive). 
-     - **Returning the correct type** , assuming arguments are of the correct type, **is callee responsbility**: 
-    - **Guarantee in every function definition** and **assume in function call**: Function returns object of the hinted type or raises Exception
-    - All functions returns must be type labeled if they return anything but None; Functions without a type hint are implictiyl assumed to return None
+     - Passing the correct type in arguments is **caller responsibility**:
+     - Guarantee in call and assume in definition: Passsed argument conform to type hint
+- **Returns**: All functions return an object that conforms to its type hint or raise an error. Note that returning and raising are mutually exclusive.
+    - Returning the correct type , assuming type conformity of the passed arguments, **is callee responsbility**: 
+    - Guarantee function definition and assume in function call: Returned object conforms to type hint or raises Exception
+    - Functions without a type hint are implicitly assumed to return None
+
 Classes
    - **Attributes**: All class attributes must be type hinted and conform to their type hints
    	- The __init__ method must guarantee the integrity of the type hint, assuming argument type conformity
