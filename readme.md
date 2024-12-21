@@ -33,7 +33,7 @@ Classes
 
 ### III: Vertical arrangement
 
-- **Downward dependency rule**: Arrange modules so that dependency points downward.
+- **Downward dependency rule**: Arrange modules so that dependency points downward. This is also referred to as the stepdown rule.
 	- For functions: Top level function first, then functions called by that function below. If lower level functions call each other, sort recursively, else sort by order of call in top level
 	- For modules/files: Consider l0, l1, etc. structure to establish downward dependency of modules within directories
 
