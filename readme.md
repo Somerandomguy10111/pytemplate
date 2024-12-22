@@ -27,6 +27,7 @@ Classes
  	- Functions that create and then return an object `create_[object]` or`make_[object]`
 - Names are searchable and distinguishable:
 	- No shadowing of outer scope
+	- Word trees are distinguished by prefix not suffix (e.g. plot_reference_fourier, plot_original_fourier instead of plot_fourier_reference, plot_fourier_original)
  	- Loop variables contract the list variable (e.g. instead of for number in numbers -> for n in numbers)
 - Hungarian notations only used when the object appears as several types throughout the program
 
