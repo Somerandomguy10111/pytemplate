@@ -1,3 +1,5 @@
+## Codebase rulebook
+
 ### I: Design by contract: Guaranteeing and assuming type hint conformity
 
 Functions
