@@ -11,4 +11,5 @@ dependencies = []
 [tool.setuptools.packages.find]
 include = ["myproject*"]   # Only include "myproject" folder in find_package process
 
-
+[project.scripts]
+cred = "myproject.configs.cred:main"
