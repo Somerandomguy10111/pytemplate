@@ -12,4 +12,7 @@ dependencies = []
 include = ["myproject*"]   # Only include "myproject" folder in find_package process
 
 [project.scripts]
-cred = "myproject.configs.cred:main"
+cred = "myproject.configs.cred:main" # Use cred in CLI to execute myproject.configs.cred:main
+
+[tool.setuptools.package-data]
+"myproject.fileIO.examples" = ["*"] # Include all non .py files in myproject.file.examples
