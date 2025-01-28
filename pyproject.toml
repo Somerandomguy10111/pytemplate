@@ -16,3 +16,4 @@ cred = "myproject.configs.cred:main" # Use cred in CLI to execute myproject.conf
 
 [tool.setuptools.package-data]
 "myproject.fileIO.examples" = ["*"] # Include all non .py files in myproject.file.examples
+
