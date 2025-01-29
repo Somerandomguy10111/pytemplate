@@ -52,7 +52,7 @@ Classes
 ### V: Misc
 
 - **kwargs only**: Pass function arguments only by keyword
-- **Comments need justification**: Comments should not be used to explain code where code can explain itself. Only use when you have justification such as:
+- **Comments require justification**: Comments should not be used to explain code where code can explain itself. Only use when you have justification such as:
 	- Pointing out a temporary workaround e.g. to work around a bug in employed module
    	- Pointing to a relevant resource e.g. linking to API docs in a function that wraps the API
  	- Explaining unintuitive statements/commands; As often cited have the comment explain the why not the how
