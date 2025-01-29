@@ -47,9 +47,12 @@ Classes
 - **Short files**: Max ~200 loc, Ideally < 120 loc
 - **Short functions**: Max ~30 loc, ideally <= 15 loc; Ideally <= 2 args, max ~ 5 args
 - **Commit messges**: ~ 5 words
+  
+
+### V: Misc
+
 - **kwargs only**: Pass function arguments only by keyword
-
-### V: Imports
-
-- **Ordering**: First import stdlib/pypi packages, then own code arranged by how far away nearest common ancestor
-- **Package inteerfaces**: Define interface of a package through __init__ file
+- **Comments need justification**: Comments should not be used to explain code where code can explain itself. Only use when you have justification such as:
+	- Pointing out a temporary workaround e.g. to work around a bug in employed module
+   	- Pointing to a relevant resource e.g. linking to API docs in a function that wraps the API
+ 	- Explaining unintuitive statements/commands; As often cited have the comment explain the why not the how
