@@ -9,7 +9,7 @@ dependencies = []
 #dependencies = ["holytools @ git+ssh://git@github.com/Somerandomguy10111/holytools", pkg2, pkg3]
 
 [project.optional-dependencies]
-dev = ["flask"]
+test = ["flask"]
 
 [tool.setuptools.packages.find]
 include = ["myproject*"]   # Only include "myproject" folder in find_package process
