@@ -55,3 +55,4 @@ Classes
 	- Pointing out a temporary workaround e.g. to work around a bug in employed module
    	- Pointing to a relevant resource e.g. linking to API docs in a function that wraps the API
  	- Explaining unintuitive statements/commands; As often cited have the comment explain the why not the how
+- **One repo, one env, one command**: Each repository should have only one environment that be launched in a single command. If you think that your repo needs several environments you instead need to split the repo.
