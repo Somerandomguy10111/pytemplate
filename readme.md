@@ -13,9 +13,9 @@ Functions
 
 Classes
    - **Attributes**: All class attributes must be type hinted and conform to their type hints
-   	- The __init__ method must guarantee the integrity of the type hint, assuming argument type conformity
-   	- All methods manipulating attributes must guarantee type conformity
-   	- All methods retrieving attributes assume the integrity of the type hints
+     - The __init__ method must guarantee the integrity of the type hint, assuming argument type conformity
+     - All methods manipulating attributes must guarantee type conformity
+     - All methods retrieving attributes assume the integrity of the type hints
    - **Inheritance**: Inherited attributes and methods implicitly inherit their type hints
 
 ### II: Naming
@@ -30,9 +30,8 @@ Classes
 - Names are searchable and distinguishable:
 	- No shadowing of outer scope
 	- Word trees are distinguished by prefix not suffix (e.g. plot_reference_fourier, plot_original_fourier instead of plot_fourier_reference, plot_fourier_original)
- 	- Loop variables contract the list variable (e.g. instead of for number in numbers -> for n in numbers)
-- Hungarian notations only used when the object appears as several types throughout the program
-
+ 	- Loop variable names contract the list variable name (e.g. instead of "for number in numbers:" use "for n in numbers:")
+- Only use Hungarian notations when the object appears as several types throughout the program
 
 ### III: Vertical arrangement
 
