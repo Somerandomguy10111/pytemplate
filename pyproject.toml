@@ -9,7 +9,7 @@ dependencies = []
 #dependencies = ["holytools @ git+ssh://git@github.com/Somerandomguy10111/holytools", pkg2, pkg3]
 
 [project.optional-dependencies]
-test = ["flask"]
+test = ["holytools"]
 
 [tool.setuptools.packages.find]
 include = ["myproject*"]   # Only include "myproject" folder in find_package process
@@ -18,5 +18,5 @@ include = ["myproject*"]   # Only include "myproject" folder in find_package pro
 cred = "myproject.configs.cred:main" # Use cred in CLI to execute myproject.configs.cred:main
 
 [tool.setuptools.package-data]
-"myproject.fileIO.examples" = ["*"] # Include all non .py files in myproject.file.examples
+"myproject.fileIO.examples" = ["*", '*/*', '*/*/*'] # Include all non .py files in myproject.file.examples including sub-dirs and sub-sub dirs
 
