@@ -13,7 +13,7 @@ Functions
 
 Classes
    - **Attributes**: All class attributes must be type hinted and conform to their type hints
-     - The __init__ method must guarantee the integrity of the type hint, assuming argument type conformity
+     - The "__init__" method must guarantee the integrity of the type hint, assuming argument type conformity
      - All methods manipulating attributes must guarantee type conformity
      - All methods retrieving attributes assume the integrity of the type hints
    - **Inheritance**: Inherited attributes and methods implicitly inherit their type hints
