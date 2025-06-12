@@ -3,10 +3,10 @@
 ### I: Design by contract: Guaranteeing and assuming type hint conformity
 
 Functions
-- **Arguments**: All function arguments must be type hinted. Caller guarantees type conformity and callee assumes type confortmity
+- **Arguments**: All function arguments must be type hinted. 
      - Passing the correct type in arguments is **caller responsibility**
      - The Callee assumes that passed argument conforms to type hint
-- **Returns**: All functions return an object that conforms to its type hint or raise an error. Note that returning and raising are mutually exclusive. Callee guarantees type conformity, given type conformity of the passed arguments, and caller assumes type conformity
+- **Returns**: All functions return an object that conforms to its type hint or raise an error. Note that returning and raising are mutually exclusive. 
     - Returning the correct type, assuming type conformity of the passed arguments, **is callee responsbility**:
     - The caller assumes that returned object, if any, conforms to its type hint
     - Functions without a type hint are implicitly assumed to return None
