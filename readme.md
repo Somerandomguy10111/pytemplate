@@ -12,7 +12,7 @@ Functions
     - Functions without a type hint are implicitly assumed to return None
 
 Classes
-   - **Attributes**: All class attributes must be type hinted and conform to their type hints throughout their lifetime
+   - **Attributes**: All class attributes must be type hinted and conform to their type hints at all times
      - The "__init__" method defines the attribute type in a single type hint outside of conditional statements
      - The "__init__" method must guarantee the integrity of the type hint upon return, assuming type conformity of arguments
      - All methods manipulating attributes must maintain the integrity of the "__init__" type hint, assuming type conformity of arguments
